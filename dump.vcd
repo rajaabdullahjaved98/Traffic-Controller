@@ -1,0 +1,134 @@
+$date
+	Wed Jun 07 18:16:44 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module TrafficControlTestbench $end
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 1 # l4_yellow $end
+$var wire 1 $ l4_red $end
+$var wire 1 % l4_green $end
+$var wire 1 & l3_yellow $end
+$var wire 1 ' l3_red $end
+$var wire 1 ( l3_green $end
+$var wire 1 ) l2_yellow $end
+$var wire 1 * l2_red $end
+$var wire 1 + l2_green $end
+$var wire 1 , l1_yellow $end
+$var wire 1 - l1_red $end
+$var wire 1 . l1_green $end
+$var parameter 4 / L1_G $end
+$var parameter 4 0 L1_R $end
+$var parameter 4 1 L1_Y $end
+$var parameter 4 2 L2_G $end
+$var parameter 4 3 L2_R $end
+$var parameter 4 4 L2_Y $end
+$var parameter 4 5 L3_G $end
+$var parameter 4 6 L3_R $end
+$var parameter 4 7 L3_Y $end
+$var parameter 4 8 L4_G $end
+$var parameter 4 9 L4_R $end
+$var parameter 4 : L4_Y $end
+$var reg 5 ; counter [4:0] $end
+$var reg 4 < state [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 :
+b1011 9
+b1001 8
+b111 7
+b1000 6
+b110 5
+b100 4
+b101 3
+b11 2
+b1 1
+b10 0
+b0 /
+$end
+#0
+$dumpvars
+b10 <
+b0 ;
+0.
+1-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+1"
+0!
+$end
+#5
+1!
+#10
+0!
+0"
+#15
+b1 ;
+1!
+#20
+0!
+#25
+b10 ;
+1!
+#30
+0!
+#35
+b11 ;
+1!
+#40
+0!
+#45
+b100 ;
+1!
+#50
+0!
+#55
+b101 ;
+1!
+#60
+0!
+#65
+b0 ;
+0-
+1+
+b11 <
+1!
+#70
+0!
+#75
+b1 ;
+1!
+#80
+0!
+#85
+b10 ;
+1!
+#90
+0!
+#95
+b11 ;
+1!
+#100
+0!
+#105
+b100 ;
+1!
+#110
+0!

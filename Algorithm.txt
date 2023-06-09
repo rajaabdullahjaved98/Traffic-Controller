@@ -1,0 +1,49 @@
+To design a state machine for a traffic control system for a 4-way road interchange, we can define the following states:
+
+State L1: Lane 1 (Main Road) is active, and other lanes are blocked.
+State L2: Lane 2 is active, and other lanes are blocked.
+State L3: Lane 3 (Main Road) is active, and other lanes are blocked.
+State L4: Lane 4 is active, and other lanes are blocked.
+We can define the transitions between these states based on the given sequence and timing requirements. Here is a state machine diagram representing the traffic control system:
+
+      +---------+
+      |         |
+      v         |
+   +------+     |
+   | L1   |     |
+   +------+     |
+      |         |
+      v         |
+   +------+     |
+   | L2   |     |
+   +------+     |
+      |         |
+      v         |
+   +------+     |
+   | L3   |     |
+   +------+     |
+      |         |
+      v         |
+   +------+     |
+   | L4   |     |
+   +------+     |
+      |         |
+      v         |
+   +------+     |
+   | Reset|<----+
+   +------+
+
+Here are the details of the state transitions and timings:
+
+Transition from L1 to L2: After 30 clock cycles, L1 changes to red and L2 changes to green. This transition occurs after a clearance time of 5 clock cycles with both lanes showing red lights.
+Transition from L2 to L3: After 20 clock cycles, L2 changes to red and L3 changes to green. This transition occurs after a clearance time of 5 clock cycles with both lanes showing red lights.
+Transition from L3 to L4: After 30 clock cycles, L3 changes to red and L4 changes to green. This transition occurs after a clearance time of 5 clock cycles with both lanes showing red lights.
+Transition from L4 to L1: After 20 clock cycles, L4 changes to red and L1 changes to green. This transition occurs after a clearance time of 5 clock cycles with both lanes showing red lights.
+
+
+In the above Verilog code, the module TrafficControlSystem takes an input reset signal and provides output signals lane1, lane2, lane3, and lane4, representing the states of the lanes.
+
+
+In the testbench, the reset signal is initially set to 1, and after 10 simulation time units, it is de-asserted to 0. The simulation continues for 200 time units before finishing. The always block displays the state of each lane whenever there is a change.
+
+You can compile and simulate the Verilog code using a suitable simulation tool, such as ModelSim or VCS, to observe the behavior of the traffic control system.
